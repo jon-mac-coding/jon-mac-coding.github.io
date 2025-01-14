@@ -1,1 +1,1 @@
-# jon-mac-coding.github.com
+# jon-mac-coding.github.io
