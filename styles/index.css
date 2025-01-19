@@ -1,0 +1,78 @@
+#class-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#class-list h3{
+    margin: 0;
+}
+#class-list p{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.course-block {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: #4E4D5C;
+    border-radius: 20px;
+}
+
+#title{
+    font-weight: 800;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#site-description{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#calculator-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#calculator-list h3{
+    margin: 0;
+}
+#calculator-list p{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.calculator-block {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: #4E4D5C;
+    border-radius: 20px;
+}
+
+.latex-large{
+    font-size: 1.5rem;
+}
+
+.material-symbols-outlined {
+    font-size: 48px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 48;
+}

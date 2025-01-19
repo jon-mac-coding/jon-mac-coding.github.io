@@ -1,0 +1,54 @@
+html {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    background-color: #2D4654;
+    color: #D2D7DF;
+}
+
+body{
+    margin: 0;
+}
+header{
+    width: 100%;
+}
+
+#top-nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #1f3341;
+}
+
+#top-nav h1 {
+    margin: 0;
+    margin-left: 10px; 
+    padding: 10px;
+}
+
+#top-nav ul {
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#top-nav ul li {
+    margin: 0;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: medium;
+    transition: color 0.3s ease;
+    color:#D2D7DF;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic JSON Viewer</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+    <header>
+        <nav id="top-nav">
+            <h1 class="left"><a href="../index.html">UottawaMathBuddy</a></h1>
+            <ul class="right" id="nav-ul">
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="course-collection.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>JSON File Viewer</h1>
+    <div id="file-content">
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const fileName = params.get('file');
+
+        if (fileName) {
+            fetch(`data/${fileName}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("File not found");
+                    }
+                    return response.json();
+                })
+                .then(json => {
+                    const chapters = json.Chapters;
+                    const contentDiv = document.getElementById('file-content');
+
+                    chapters.forEach(chapterGroup => {
+                        for (const [chapterKey, chapterValue] of Object.entries(chapterGroup)) {
+                            const chapterTitle = document.createElement('h2');
+                            chapterTitle.textContent = chapterKey;
+                            contentDiv.appendChild(chapterTitle);
+
+                            chapterValue.forEach(subject => {
+                                const subjectDiv = document.createElement('div');
+                                subjectDiv.innerHTML = `
+                                    <h3>${subject.subject}</h3>
+                                    <p>${marked.parse(subject.about)}</p>
+                                `;
+                                contentDiv.appendChild(subjectDiv);
+                            });
+                        }
+                    });
+                })
+                .catch(error => {
+                    document.getElementById('file-content').textContent = error.message;
+                });
+        } else {
+            document.getElementById('file-content').textContent = "No file specified.";
+        }
+    </script>
+</body>
+</html>

@@ -3,20 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=calculate" />
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">Home</a> <!--use an icon here in the future.-->
-            <ul id="nav-ul">
-                <li class="nav-li"><a href="pages/login.html">Log in</a></li>
-                <li class="nav-li"><a href="pages/signup.html">Sign up</a></li>
-                <li class="nav-li"><a href="pages/content.html">My Dashboard</a></li>
+        <nav id="top-nav">
+            <h1 class="left"><a href="#">UottawaMathBuddy</a></h1>
+            <ul class="right" id="nav-ul">
+                <li><a href="pages/resources.html">Resources</a></li>
+                <li><a href="pages/course-collection.html">Courses</a></li>
+                <li><a href="pages/about.html">About</a></li>
             </ul>
         </nav>
     </header>
-    <h1>My Github hosted site.</h1>
-    <p>This is just a test website at the moment. A simple file system will be created</p>
+    <main>
+        <h1 id="title">A Math Study Tool For Students</h1>
+        <p id="site-description">I've created this website as a personal tool for studying my course materials as well as computer science on the side. The decision to make this project public was to create a resource for other students that may also be in need of help. Different resources will be posted here from my course notes, teachers' course notes, publicly available textbooks. Hopefully you all can make the most of this. There will be a way to contact me below in order to ask questions, make requests for material and or provide your own to be added to the site. The more the merrier. Thank you!</p>
+    
+        <div id="courses">
+            <h3>Preview of some courses:</h3>
+            <ul id="class-list">
+                <li class="course-block">
+                    <a href="pages/course-dashboard.html?file=2125Dashboard.json">
+                        <h3>MAT2125: Elementary Real Analysis</h3>
+                        <p>A rigorous course covering the definitons and inner workings of sequences, series, topology, continuity and more. A strong ability to create proofs is needed for this course. </p>
+                    </a>
+                </li>
+                <li class="course-block">
+                    <a href="pages/course-dashboard.html?file=1362Dashboard.json">
+                        <h3>MAT1362: Mathematical Reasoning and Proofs</h3>
+                        <p>A course that breaks down the fundamentals of math, proven through various proof techniques, covering concepts from geometry, algebra, number theory and more ...</p>
+                    </a>
+                </li>
+            </ul>  
+        </div>
+        <div id="calculators">
+            <h3>Useful external calculator tools:</h3>
+            <ul id="calculator-list">
+                <li class="calculator-block">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.integral-calculator.com/">
+                        <h3>Integral Calculator</h3>
+                        <p>An integral calculator that shows its steps and graphical representation of the system.</p>
+                        <p class="latex-large">$$\int_{a}^{b} x \,dx$$</p>
+                    </a>
+                </li>
+                <li class="calculator-block">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.derivative-calculator.net/">
+                        <h3>Derivative Calculator</h3>
+                        <p>A derivative calculator that shows its steps and graphical representation of the system.</p>
+                        <p class="latex-large">$$f'(x)$$</p>
+                    </a>
+                </li>
+                <li class="calculator-block">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.wolframalpha.com/">
+                        <h3>Wolfram Alpha</h3>
+                        <p>A multipurpose calculator, very powerful but not all steps are able to be shown.</p>
+                        <span class="material-symbols-outlined">
+                            calculate
+                        </span>
+                    </a>
+                </li>
+            </ul>  
+        </div>  
+    </main>
+
 </body>
 </html>

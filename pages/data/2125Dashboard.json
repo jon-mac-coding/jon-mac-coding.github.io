@@ -1,0 +1,25 @@
+{
+    "Resources": [
+        {
+            "My Notes": [
+                {
+                    "url": "https://www.youtube.com",
+                    "name": "Youtube "
+                }
+            ],
+            "Professors notes": [
+                {
+                    "url": "Savagenotesurl",
+                    "name": "That "
+                }
+            ],
+            "Textbooks": [
+                {
+                    "url": "t1url",
+                    "name": "The Other thing "
+                }
+            ]
+
+        }
+    ]
+}
