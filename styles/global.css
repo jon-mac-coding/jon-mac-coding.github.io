@@ -22,9 +22,12 @@ header{
 }
 
 #top-nav h1 {
+    display: flex;
     margin: 0;
     margin-left: 10px; 
     padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #top-nav ul {
