@@ -1,4 +1,4 @@
-#class-list{
+#calculator-list{
     list-style: none;
     padding: 0;
     display: flex;
@@ -6,15 +6,15 @@
     gap: 10px;
 }
 
-#class-list h3{
+#calculator-list h3{
     margin: 0;
 }
-#class-list p{
+#calculator-list p{
     margin: 0;
     margin-top: 20px;
 }
 
-.course-block {
+.calculator-block {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -25,15 +25,16 @@
     border-radius: 20px;
 }
 
-#title{
-    font-weight: 800;
-    text-align: center;
-    font-size: 4rem;
+.latex-large{
+    font-size: 1.5rem;
 }
 
-#site-description{
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
+.material-symbols-outlined {
+    padding: 50px 50px;
+    margin-left: 50px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 48
 }
-

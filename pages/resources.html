@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/calculator-block.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=calculate" />
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <header>
@@ -36,14 +39,33 @@
                 <li>MAT2143 Notes</li>
             </ul>
         </div>
-        <div id="online-calculators"> 
-            <h3>Various Online Calculators</h3>
-            <ul>
-                <li>Integral Calculator</li>
-                <li>Derivative Calculator</li>
-                <li>Matrix Arithmetic Calculator</li>
-                <li>Wolfram Alpha</li>
-            </ul>
+        <div id="calculators">
+            <h3>Useful external calculator tools:</h3>
+            <ul id="calculator-list">
+                <li class="calculator-block">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.integral-calculator.com/">
+                        <h3>Integral Calculator</h3>
+                        <p>An integral calculator that shows its steps and graphical representation of the system.</p>
+                        <p class="latex-large">$$\int_{a}^{b} x \,dx$$</p>
+                    </a>
+                </li>
+                <li class="calculator-block">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.derivative-calculator.net/">
+                        <h3>Derivative Calculator</h3>
+                        <p>A derivative calculator that shows its steps and graphical representation of the system.</p>
+                        <p class="latex-large">$$f'(x)$$</p>
+                    </a>
+                </li>
+                <li class="calculator-block">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.wolframalpha.com/">
+                        <h3>Wolfram Alpha</h3>
+                        <p>A multipurpose calculator, very powerful but not all steps are able to be shown.</p>
+                        <span class="material-symbols-outlined">
+                            calculate
+                        </span>
+                    </a>
+                </li>
+            </ul>  
         </div>
     </main>
 </body>
