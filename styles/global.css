@@ -10,6 +10,14 @@ body{
 }
 header{
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 11vh;
 }
 
 #top-nav {
@@ -18,7 +26,7 @@ header{
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    background-color: #1f3341;
+    background-color: #142129;
 }
 
 #top-nav h1 {
@@ -28,6 +36,7 @@ header{
     padding: 10px;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
 }
 
 #top-nav ul {
@@ -51,7 +60,13 @@ a {
     color:#D2D7DF;
 }
 
-main{
-    width: 80%;
-    margin: 0 auto;
+footer{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul{
+    list-style-type: none;
 }

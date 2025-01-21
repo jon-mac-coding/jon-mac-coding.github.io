@@ -1,0 +1,23 @@
+#other-resource-list{
+    list-style: none;
+    padding: 0;
+}
+
+#other-resource-list h3{
+    margin: 0;
+}
+#other-resource-list p{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.other-resource-block {
+    padding: 20px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    background-color: #4E4D5C;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0);
+}

@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: space-around;
 }
 
 #calculator-list h3{
@@ -23,6 +24,7 @@
     height: 250px;
     background-color: #4E4D5C;
     border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0);
 }
 
 .latex-large{
